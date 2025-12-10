@@ -80,10 +80,10 @@ public class Jabeja {
 
     // swap the colors
     // TODO - Done
-    if(partner.isPresent()) {
-      int tempColor = nodep.getColor();
-      nodep.setColor(partner.get().getColor());
-      partner.get().setColor(tempColor);
+    if (partner != null) {
+      int tempColor = partner.getColor();
+      partner.setColor(nodep.getColor());
+      nodep.setColor(tempColor);
       numberOfSwaps++;
     }
   }
